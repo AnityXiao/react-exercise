@@ -6,12 +6,11 @@
         display: flex;
         justify-content: space-around;
         cursor: pointer;
-        background-color: rgb(166, 202, 190);
         li {
             width:120px;
             line-height: 40px;
             padding: 0 10px;
-            background-color: rgb(166, 202, 190);
+            background-color: rgb(70, 101, 90);
             color: #fff;
             position: relative;
             ul {
@@ -24,7 +23,7 @@
                 li {
                     line-height: 40px;
                     padding: 0 10px;
-                    background-color: rgb(166, 202, 190);
+                    background-color: rgb(116, 139, 131);
                     opacity: 0;
                     color: #fff;
                     float: none;

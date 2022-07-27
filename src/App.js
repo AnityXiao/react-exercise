@@ -1,18 +1,18 @@
 import logo from './assets/images/pic2.jpg';
-import './App.css';
+import './App.scss';
 import "./assets/css/reset.css"
 import PulldownAnimation from './views/PulldownElement/PulldownElement';
+import AccordingElement from './views/AccordionElement/AccordingElement';
 
 function App() {
   return (
     <div className="App">
-      <PulldownAnimation/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <p>
+          TRANSITION & ANIMATION
         </p>
-        <a
+        {/* <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
@@ -21,6 +21,8 @@ function App() {
           Learn React
         </a> */}
       </header>
+      <PulldownAnimation/>
+      <AccordingElement/>
     </div>
   );
 }

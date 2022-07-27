@@ -15,3 +15,21 @@
 4. transition-timing-function:指定过渡类型
     - 属性可选值:ease/linear/ease-in/ease-out/ease-in-out/cubic-bezier
     - 属性可选值含义:先加速后减速/匀速/加速/减速/先加速后减速（比ease强烈）/贝塞尔曲线
+5. transition:[属性名][持续时间][速度曲线][延迟时间]
+
+#### transform
+> 转换，改变元素的外观
+1. translate:位移
+    - translate(水平距离,垂直距离)
+    - translateX(水平距离)
+    - translateY(垂直距离)
+    - translate2d()
+    - translate3d()
+2. scale:缩放
+    - scale(0.4):宽度和高度都缩小成原来的0.4
+    - scale(0.2,0.5):宽度缩成原来的0.2，高度缩成原来的0.5
+    - scaleX(0.2):宽度缩成原来的0.2
+    - scale(0.5):高度缩成原来的0.5
+3. rotate:旋转
+    - rotate(90deg,180deg);
+4. skew:倾斜
