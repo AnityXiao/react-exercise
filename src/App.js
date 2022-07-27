@@ -1,9 +1,12 @@
-import logo from './assets/images/pic1.jpg';
+import logo from './assets/images/pic2.jpg';
 import './App.css';
+import "./assets/css/reset.css"
+import PulldownAnimation from './views/PulldownElement/PulldownElement';
 
 function App() {
   return (
     <div className="App">
+      <PulldownAnimation/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         {/* <p>

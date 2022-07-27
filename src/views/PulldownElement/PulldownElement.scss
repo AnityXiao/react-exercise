@@ -1,0 +1,53 @@
+.animation_container {
+    width: 480px;
+    margin: 0 auto;
+
+    .ul_list {
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        background-color: rgb(166, 202, 190);
+        li {
+            width:120px;
+            line-height: 40px;
+            padding: 0 10px;
+            background-color: rgb(166, 202, 190);
+            color: #fff;
+            position: relative;
+            ul {
+                position: absolute;
+                top: 40px;
+                left: 0px;
+                height: 0;
+                overflow: hidden;
+
+                li {
+                    line-height: 40px;
+                    padding: 0 10px;
+                    background-color: rgb(166, 202, 190);
+                    opacity: 0;
+                    color: #fff;
+                    float: none;
+                    transition: all 1s;
+                }
+
+                li:nth-child(1n) {
+                    transform: translate3d(100%, 0, 0);
+                }
+
+                li:nth-child(2n) {
+                    transform: translate3d(-100%, 0, 0);
+                }
+            }
+        }
+    }
+
+    .ul_list li:hover ul {
+        overflow: visible;
+    }
+
+    .ul_list li:hover ul li {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

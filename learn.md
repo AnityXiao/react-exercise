@@ -1,0 +1,17 @@
+#### transition
+> 设置css属性的过渡效果
+1. transition-property:指定应用过渡属性的名称，默认设置为all
+    - 多个属性名称用','分隔
+    - 如果只设置属性而没有设置过渡时间的话，过渡效果不生效
+2. transition-duration:指定过渡的持续时间
+    - 默认值为0
+    - 属性值单位为s/ms
+    - 可指定多个持续时间
+3. transition-delay:指定延迟过渡的时间
+    - 属性值单位为s/ms
+    - 取值为正时会延迟一段时间来响应过渡效果
+    - 取值为负时会导致过渡立即开始
+    - 可指定多个延迟时间
+4. transition-timing-function:指定过渡类型
+    - 属性可选值:ease/linear/ease-in/ease-out/ease-in-out/cubic-bezier
+    - 属性可选值含义:先加速后减速/匀速/加速/减速/先加速后减速（比ease强烈）/贝塞尔曲线
