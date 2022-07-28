@@ -6,10 +6,18 @@ import AccordingElement from './views/AccordionElement/AccordingElement';
 import FunctionElement from './views/FunctionElement/FunctionElement';
 import { Link } from 'react-router-dom'
 import { Button } from 'antd'
+import {ArrowUpOutlined} from '@ant-design/icons'
 import JumpElement from './components/JumpElment/JumpElement';
 
 
 function App() {
+  function scrollTotop(){
+    var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+    console.log(scrollTop)
+    document.documentElement.scrollTop = 0
+    window.pageYOffset=0
+    document.body.scrollTop =0
+  }
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +26,10 @@ function App() {
           TRANSITION & ANIMATION
         </p>
       </header>
+      <div className="scroll_top" onClick={scrollTotop}>
+      <ArrowUpOutlined className='back_icon'/>
+      <p>BACK</p>
+      </div>
       {/* <PulldownAnimation/>
       <AccordingElement/> */}
       <FunctionElement />
