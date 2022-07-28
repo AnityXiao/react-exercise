@@ -1,9 +1,10 @@
+@import '~antd/dist/antd.css';
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 20vmin;
+  height: 10vmin;
   pointer-events: none;
   border-radius: 50%;
 }
@@ -25,8 +26,8 @@
   color: #000;
   margin-top:20px;
   p{
-    line-height: 20vmin;
-    margin:0px 0px 10px 10px;
+    line-height: 10vmin;
+    margin:0px 0px 10px 20px;
   }
 }
 

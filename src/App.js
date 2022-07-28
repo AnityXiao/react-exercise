@@ -3,6 +3,7 @@ import './App.scss';
 import "./assets/css/reset.css"
 import PulldownAnimation from './views/PulldownElement/PulldownElement';
 import AccordingElement from './views/AccordionElement/AccordingElement';
+import FunctionElement from './views/FunctionElement/FunctionElement';
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
           Learn React
         </a> */}
       </header>
-      <PulldownAnimation/>
-      <AccordingElement/>
+      {/* <PulldownAnimation/>
+      <AccordingElement/> */}
+      <FunctionElement/>
     </div>
   );
 }
