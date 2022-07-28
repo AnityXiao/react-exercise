@@ -1,11 +1,15 @@
 import React from 'react';
 import './AccordingElement.scss'
-export default class AccordingElement extends React.Component {
+import withRouter from '../../utils/withRouter'
+import {handleSearch} from '../../utils/common'
+class AccordingElement extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-
         }
+    }
+    componentDidMount(){
+        console.log(this.props.location.state.motto,this.props.params.name,handleSearch(this.props.location.search))
     }
     render() {
         return (
@@ -32,3 +36,5 @@ export default class AccordingElement extends React.Component {
         )
     }
 }
+
+export default withRouter(AccordingElement)

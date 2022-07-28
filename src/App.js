@@ -4,6 +4,10 @@ import "./assets/css/reset.css"
 import PulldownAnimation from './views/PulldownElement/PulldownElement';
 import AccordingElement from './views/AccordionElement/AccordingElement';
 import FunctionElement from './views/FunctionElement/FunctionElement';
+import { Link } from 'react-router-dom'
+import { Button } from 'antd'
+import JumpElement from './components/JumpElment/JumpElement';
+
 
 function App() {
   return (
@@ -13,18 +17,22 @@ function App() {
         <p>
           TRANSITION & ANIMATION
         </p>
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
       </header>
       {/* <PulldownAnimation/>
       <AccordingElement/> */}
-      <FunctionElement/>
+      <FunctionElement />
+      <nav className='nav-container'>
+        <Button type="primary" ghost >
+          <Link to="/pulldown" className='link'>PULLDOWN</Link>
+        </Button>
+        <Button type="primary" ghost>
+          <Link to="/according" className='link'>ACCORDING</Link>
+        </Button>
+        <Button type="primary" ghost>
+          <Link to="/other" className='link'>ACCORDING</Link>
+        </Button>
+      </nav>
+      <JumpElement/>
     </div>
   );
 }

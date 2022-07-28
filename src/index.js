@@ -3,12 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route,Navigate} from 'react-router-dom';
+import PulldownAnimation from './views/PulldownElement/PulldownElement';
+import AccordingElement from './views/AccordionElement/AccordingElement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  // <React.StrictMode>
+    <BrowserRouter>
+    {/* 注册路由 */}
+      <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/pulldown" element={<PulldownAnimation />} />
+          <Route path="/according/:name" element={<AccordingElement />} />
+          {/* 访问other路由时重定向到首页 */}
+          <Route path="/other" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
