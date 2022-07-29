@@ -1,0 +1,62 @@
+.drag-container {
+    .drag-title {
+        font-size: 18px;
+        color: #999;
+        text-align: center;
+        animation: change 5s infinite;
+        margin: 20px 0px;
+    }
+    .drag-content{
+        width: 100%;
+        min-height: 400px;
+        display: flex;
+        justify-content: center;
+        .drag-left{
+            width:50%;
+            border:1px dashed rgb(124, 214, 242);
+            box-sizing: border-box;
+            p{
+                font-size:16px;
+                font-weight:bold;
+                color:rgb(166, 223, 204);
+                text-align: center;
+                margin:10px auto;
+            }
+            .drag-choose{
+                margin-top:20px;
+                width:80%;
+                margin:0px auto;
+            }
+        }
+        .drag-right{
+            width:50%;
+            border:1px dashed rgb(225, 151, 151);
+            box-sizing: border-box;
+            p{
+                font-size:16px;
+                font-weight:bold;
+                color:rgb(223, 166, 166);
+                text-align: center;
+                margin:10px auto;
+            }
+            .drag-result{
+                width:80%;
+                height:calc(100% - 50px);
+                border:1px solid green;
+                margin:0px auto;
+            }
+        }
+    }
+}
+
+@keyframes change {
+    from {
+        transform: translateX(100px);
+        opacity: 0
+    }
+
+    to {
+        transform: translateX(0);
+        color: rgb(101, 160, 114)
+    }
+}

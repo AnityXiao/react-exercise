@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route,Navigate} from 'react-router-dom';
 import PulldownAnimation from './views/PulldownElement/PulldownElement';
 import AccordingElement from './views/AccordionElement/AccordingElement';
-import DragElement from './components/DragElement/DragElement';
+import DragFrame from './views/DragFrame/DragFrame';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -17,7 +17,7 @@ root.render(
           <Route path="/" element={<App />} />
           <Route path="/pulldown" element={<PulldownAnimation />} />
           <Route path="/according/:name" element={<AccordingElement />} />
-          <Route path="/drag" element={<DragElement />} />
+          <Route path="/drag" element={<DragFrame />} />
           {/* 访问other路由时重定向到首页 */}
           <Route path="/other" element={<Navigate to="/" replace />} />
       </Routes>
