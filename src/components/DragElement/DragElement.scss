@@ -1,0 +1,32 @@
+.drag-element{
+    width:calc(100% - 100px);
+    height:100vh;
+    .title{
+        font-size:18px;
+        color:#999;
+        text-align:center;
+        animation: change 5s infinite;
+        margin:20px 0px;
+    }
+    .drag-box{
+        width:100px;
+        height:100px;
+        position: absolute;
+        background:linear-gradient(to bottom right,#a9c4dc,#4b79a1) ;
+        border-radius: 50%;
+        top:100px;
+        left:20px;
+    }
+    .drag-content{
+        width:200px;
+        height:200px;
+        margin:20px auto;
+        border-radius: 50%;
+        border:1px dashed #666;
+        background:linear-gradient(rgb(215, 215, 125),rgb(190, 144, 144),rgb(116, 156, 116),) ;
+    }
+}
+@keyframes change {
+    from{transform:translateX(100px);opacity:0}
+    to{transform:translateX(0);color:rgb(101, 160, 114)}
+}
